@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matt Final Project CSS 201</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="images/Rocket.jpg" type="image/jpg" />
+    <style>
+      .fa {
+        padding: 4px;
+        text-align: center;
+        margin: 5px 10px;
+        font-size: 30px;
+        width: 50px;
+        transform: translate(0px, -4px);
+      }
+      .fa-youtube {
+        background: #bb0000;
+        color: white;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- 1. Create navbar section 26/01 -->
+    <div id="Navigation">
+      <div class="Logo">
+        <a href="#"><img src="images/RocketLogo.png" alt="Website Logo" /></a>
+      </div>
+      <div class="Services"><a href="#">Services</a></div>
+      <div class="Contact"><a href="#">Contact</a></div>
+      <div class="Wagtail"><a href="#">Wagtail Course</a></div>
+    </div>
+    <!-- 2. Create Hero Section 27/01 -->
+    <div id="Hero">
+      <div class="Header">
+        <h2>
+          Supreme Rocket <br />
+          Maintenance
+        </h2>
+        <p>Your rocket is your $1,000,000,000 baby. We get that.</p>
+        <button id="ContactUs">Contact Us</button>
+      </div>
+    </div>
+    <!-- 3. Create P section and Services/Contact sections below Hero 28/01 -->
+    <div id="Middle-P">
+      <p>Your rocket is valuable. Let the professionals work on it.</p>
+    </div>
+
+    <div id="Middle-Image">
+      <div class="Image1">
+        <a href="#"
+          ><img src="images/LegoToy.jpg" width="550px" height="400px" />
+          <h4>It's not a toy</h4>
+          <p>Or maybe you're Jeff Bezos.. and rockets are your toys!</p>
+          <a class="Middle-Link" href="#"><h5>VIEW SERVICES</h5></a></a
+        >
+      </div>
+      <div class="Image2">
+        <a href="#"
+          ><img src="images/RocketMiddle.jpg" width="550px" height="400px" />
+          <h4>Rockets are cool!</h4>
+          <p>Especially when you see photos like this one 🤤</p>
+          <a class="Middle-Link" href="#"><h5>CONTACT US</h5></a></a
+        >
+      </div>
+    </div>
+    <!-- 4. Create lower image/details section 28/01-29/01 -->
+    <div id="Lower-Image">
+      <div class="LowerImage1">
+        <img src="images/LowerRocket1.jpg" height="500px" width="700px" />
+      </div>
+      <div class="LowerDetail1">
+        <p>
+          Probably the coolest thing ever!! <br />
+          We can program this for you.
+        </p>
+        <button>More Details</button>
+      </div>
+      <div class="LowerImage2">
+        <img src="images/LowerRocket2.jpg" height="500px" width="700px" />
+      </div>
+      <div class="LowerDetail2">
+        <p>
+          This image has nothing to do with <br />
+          cleaning. But it's kind of neat still.
+        </p>
+        <button>More Details</button>
+      </div>
+      <div class="LowerImage3">
+        <img src="images/LowerRocket3.jpg" height="500px" width="700px" />
+      </div>
+      <div class="LowerDetail3">
+        <p>
+          If you think gas is expensive now.. think <br />about rocket prices!
+          Luckily, <br />
+          we water our gas down to give you <br />
+          more bang for your buck.
+        </p>
+        <button>More Details</button>
+      </div>
+    </div>
+    <!-- 5. Create lower P sections 30/01 -->
+    <div id="LowerP">
+      <div class="FirstP">
+        <p>We've also partnered with Skynet to maintain humanoid robotics.</p>
+        <button id="LowerContact">Contact Us</button>
+        <div class="SecondP">
+          <p>
+            Our rockets were so clean they blinded over 1,000 people <br />
+            when they watched our launch. <br />
+            Thanks Rocketman! <br />
+          </p>
+          <p class="ThirdP">— TOTALLY NOT SPACEX 😉</p>
+        </div>
+      </div>
+    </div>
+    <!-- 6. Create contact section 30/01 -->
+    <div id="BottomContact">
+      <div class="Content">
+        <h4>We’ll take good care of your rocket.</h4>
+        <p>
+          We’ll treat your rocket as if it’s our own. Our standards are higher
+          than the ISS’s altitude. We also enjoy test driving your rocket before
+          giving it back 😱
+        </p>
+      </div>
+      <div class="LowestContact">
+        <button>Contact Us</button>
+      </div>
+    </div>
+    <!-- 7. Create footer section using grid 30/01 -->
+    <div id="Footer">
+      <div class="Links">
+        LINKS
+        <div class="ServicesF"><a href="#">Services</a></div>
+        <div class="ContactF"><a href="#">Contact</a></div>
+        <div class="WagtailF"><a href="#">Wagtail Course</a></div>
+      </div>
+      <div class="ContactDetails">
+        CONTACT US
+        <div class="Email">
+          Contact us anytime at <br />
+          <a href="#">gary@totallyfakeemail.com</a>
+        </div>
+        <div class="Text">*All images from unsplash.com</div>
+      </div>
+      <div class="Hours">
+        Hours
+        <div class="Weekday">Monday - Friday</div>
+        <div class="Time">9am - 5pm</div>
+      </div>
+      <div class="SocialMedia">
+        <div class="TwitterYoutube">
+          <a
+            href="https://twitter.com/share?ref_src=twsrc%5Etfw"
+            class="twitter-share-button"
+            data-show-count="false"
+            >Tweet</a
+          >
+          <script
+            async
+            src="https://platform.twitter.com/widgets.js"
+            charset="utf-8"
+          ></script>
+          <a href="#" class="fa fa-youtube"></a>
+        </div>
+        <div class="Copyright">&copy;2023 Rocketman</div>
+      </div>
+    </div>
+  </body>
+</html>

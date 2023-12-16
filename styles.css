@@ -1,0 +1,621 @@
+body {
+  background-color: whitesmoke;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+#Navigation {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin-left: 30px;
+}
+
+#Navigation div {
+  box-sizing: border-box;
+  /* border: 1px solid black;  */
+}
+
+.Logo {
+  flex-basis: 30%;
+  flex-shrink: 0;
+  flex-grow: 0;
+  font-size: 25px;
+  text-align: center;
+  margin-top: 25px;
+  margin-right: 120px;
+  transform: translate(-15px, 0);
+}
+
+.Services {
+  flex-basis: 20%;
+  flex-shrink: 1;
+  flex-grow: 0;
+  font-size: 25px;
+  text-align: center;
+  margin-top: 42px;
+  padding-left: 65px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.Contact {
+  flex-basis: 18%;
+  flex-shrink: 1;
+  flex-grow: 0;
+  font-size: 25px;
+  text-align: center;
+  margin-top: 42px;
+  margin-left: 10px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.Wagtail {
+  flex-basis: 18%;
+  flex-shrink: 1;
+  flex-grow: 0;
+  font-size: 25px;
+  text-align: center;
+  margin-top: 42px;
+  margin-left: 10px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#Hero {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.7) 50%
+    ),
+    url('images/RocketHero.jpg');
+  height: 750px;
+  width: 100%;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  transform: translate(-8px, 0px);
+}
+
+.Header {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 40px;
+  color: beige;
+  margin: 20px;
+  padding: 30px;
+  transform: translate(15px, 120px);
+}
+
+.Header p {
+  font-size: 35px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.Header #ContactUs {
+  width: 170px;
+  height: 45px;
+  font-size: 25px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  display: inline-block;
+  padding: 5px 20px;
+  background-color: white;
+  transition: all 1s, padding 0.5s;
+  cursor: pointer;
+}
+
+#ContactUs:hover {
+  background-color: black;
+  color: white;
+}
+
+#Middle-P {
+  /* border: 1px solid black; */
+  box-sizing: border-box;
+  margin: 100px auto;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
+
+#Middle-Image {
+  /* transform: translate(100px, 0px); */
+  display: flex;
+  /* flex-wrap: wrap; */
+  padding: 10px;
+  margin-left: 30px;
+  box-sizing: border-box;
+}
+
+#Middle-Image h4 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 25px;
+  text-align: center;
+  color: black;
+}
+
+#Middle-Image p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  color: dimgray;
+}
+
+#Middle-Image .Image1 {
+  /* display: inline-block; */
+  border: 1px solid rgba(128, 128, 128, 0.342);
+  margin-right: 100px;
+  margin-left: 10px;
+  margin-bottom: 100px;
+  height: 600px;
+  width: 550px;
+  transform: translate(40px, 0px);
+  /* flex-basis: 50%; */
+}
+
+#Middle-Image .Image2 {
+  /* display: inline-block; */
+  border: 1px solid rgba(128, 128, 128, 0.342);
+  height: 600px;
+  width: 550px;
+  transform: translate(-20px, 0px);
+  margin-bottom: 100px;
+  /* flex-basis: 50%; */
+}
+
+.Middle-Link {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  color: blue;
+}
+
+#Lower-Image {
+  box-sizing: border-box;
+  margin-left: 90px;
+  position: relative;
+  margin-bottom: 100px;
+  display: inline-block;
+}
+
+.LowerImage1 {
+  /* border: 1px solid black; */
+  height: 500px;
+  width: 700px;
+  position: relative;
+  display: inline-block;
+}
+
+.LowerDetail1::before {
+  /* border: 1px solid black; */
+  height: 250px;
+  width: 500px;
+  position: absolute;
+  content: 'Self Landing Rocket';
+  display: inline-block;
+  transform: translate(570px, -210px);
+  color: beige;
+  margin-bottom: 100px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  padding-top: 50px;
+  background-color: rgb(64, 59, 59);
+  background: linear-gradient(
+    90deg,
+    rgba(64, 59, 59, 0.9500175070028011) 0%,
+    rgba(13, 7, 17, 0.8911939775910365) 100%,
+    rgba(17, 2, 2, 0.5606617647058824) 100%
+  );
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.LowerDetail1 p {
+  /* text-align: center; */
+  color: beige;
+  transform: translate(644px, -80px);
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.LowerDetail1 button {
+  width: 250px;
+  height: 45px;
+  font-size: 25px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-bottom: 90px;
+  /* padding: 5px 20px; */
+  background-color: white;
+  transition: all 1s, padding 0.5s;
+  text-align: center;
+  transform: translate(640px, -80px);
+  cursor: pointer;
+}
+
+.LowerDetail1 button:hover {
+  background-color: rgb(64, 59, 59);
+  background: linear-gradient(
+    90deg,
+    rgba(64, 59, 59, 0.9500175070028011) 0%,
+    rgba(13, 7, 17, 0.8911939775910365) 100%,
+    rgba(17, 2, 2, 0.5606617647058824) 100%
+  );
+  color: white;
+}
+
+.LowerImage2 {
+  /* border: 1px solid black; */
+  height: 500px;
+  width: 700px;
+  position: relative;
+  display: inline-block;
+  transform: translate(440px, 0px);
+}
+
+.LowerDetail2::before {
+  /* border: 1px solid black; */
+  height: 250px;
+  width: 500px;
+  position: absolute;
+  content: "We'll clean your rocket";
+  display: inline-block;
+  transform: translate(90px, -185px);
+  color: beige;
+  margin-bottom: 100px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  padding-top: 50px;
+  background-color: rgb(64, 59, 59);
+  background: linear-gradient(
+    90deg,
+    rgba(64, 59, 59, 0.9500175070028011) 0%,
+    rgba(13, 7, 17, 0.8911939775910365) 100%,
+    rgba(17, 2, 2, 0.5606617647058824) 100%
+  );
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.LowerDetail2 p {
+  /* text-align: center; */
+  color: beige;
+  transform: translate(145px, -60px);
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.LowerDetail2 button {
+  width: 250px;
+  height: 45px;
+  font-size: 25px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-bottom: 90px;
+  /* padding: 5px 20px; */
+  background-color: white;
+  transition: all 1s, padding 0.5s;
+  text-align: center;
+  transform: translate(145px, -60px);
+  cursor: pointer;
+}
+
+.LowerDetail2 button:hover {
+  background-color: rgb(64, 59, 59);
+  background: linear-gradient(
+    90deg,
+    rgba(64, 59, 59, 0.9500175070028011) 0%,
+    rgba(13, 7, 17, 0.8911939775910365) 100%,
+    rgba(17, 2, 2, 0.5606617647058824) 100%
+  );
+  color: white;
+}
+
+.LowerImage3 {
+  /* border: 1px solid black; */
+  height: 500px;
+  width: 700px;
+  position: relative;
+  display: inline-block;
+}
+
+.LowerDetail3::before {
+  /* border: 1px solid black; */
+  height: 280px;
+  width: 520px;
+  position: absolute;
+  content: 'Rockets are gas guzzlers';
+  display: inline-block;
+  transform: translate(570px, -210px);
+  color: beige;
+  /* margin-bottom: 100px; */
+  margin-left: 40px;
+  padding-bottom: 30px;
+  padding-top: 50px;
+  padding-left: 20px;
+  /* padding-right: 20px; */
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  background-color: rgb(64, 59, 59);
+  background: linear-gradient(
+    90deg,
+    rgba(64, 59, 59, 0.9500175070028011) 0%,
+    rgba(13, 7, 17, 0.8911939775910365) 100%,
+    rgba(17, 2, 2, 0.5606617647058824) 100%
+  );
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.LowerDetail3 p {
+  /* text-align: center; */
+  color: beige;
+  transform: translate(612px, -80px);
+  margin-left: 40px;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 20px;
+}
+.LowerDetail3 button {
+  width: 250px;
+  height: 45px;
+  font-size: 25px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  /* margin-bottom: 90px; */
+  /* padding: 5px 20px; */
+  background-color: white;
+  transition: all 1s, padding 0.5s;
+  text-align: center;
+  transform: translate(630px, -80px);
+  margin-left: 40px;
+  cursor: pointer;
+}
+
+.LowerDetail3 button:hover {
+  background-color: rgb(64, 59, 59);
+  background: linear-gradient(
+    90deg,
+    rgba(64, 59, 59, 0.9500175070028011) 0%,
+    rgba(13, 7, 17, 0.8911939775910365) 100%,
+    rgba(17, 2, 2, 0.5606617647058824) 100%
+  );
+  color: white;
+}
+
+#LowerP .FirstP {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  text-align: center;
+  transform: translate(0px, -50px);
+  /* box-sizing: border-box; */
+}
+
+#LowerContact {
+  width: 250px;
+  height: 45px;
+  font-size: 25px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  display: inline-block;
+  padding: 5px 20px;
+  background-color: blueviolet;
+  transition: all 1s, padding 0.5s;
+  margin-bottom: 100px;
+  cursor: pointer;
+}
+
+#LowerContact:hover {
+  background-color: black;
+  color: white;
+}
+
+.SecondP {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 30px;
+  font-style: italic;
+}
+
+#LowerP .ThirdP {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  transform: translate(0px, -20px);
+}
+
+#BottomContact {
+  /* border: 1px solid black; */
+  height: 300px;
+  background-color: blueviolet;
+  display: flex;
+  flex-wrap: wrap;
+  width: 101.2%;
+  background-size: cover;
+  transform: translate(-8px, 0px);
+}
+
+.Content {
+  flex-basis: 50%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 21px;
+  color: beige;
+  transform: translate(65px, 10px);
+}
+
+.Content h4 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 40px;
+  color: beige;
+  margin-bottom: 15px;
+}
+
+.LowestContact {
+  flex-basis: 50%;
+  flex-shrink: 0;
+  flex-grow: 1;
+  text-align: center;
+  margin-top: 115px;
+}
+
+.LowestContact button {
+  font-size: 25px;
+  background-color: white;
+  transition: all 1s, padding 0.5s;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  width: 250px;
+  margin-left: 150px;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.LowestContact button:hover {
+  background-color: black;
+  color: white;
+}
+
+#Footer {
+  /* border: 1px solid black; */
+  background-color: black;
+  height: 300px;
+  width: 101.2%;
+  background-size: cover;
+  transform: translate(-8px, 0px);
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 5px;
+  grid-row-gap: 15px;
+  box-sizing: border-box;
+}
+
+.Links {
+  /* border: 1px solid black; */
+  grid-column-start: 1;
+  grid-column-end: 2;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 15px;
+  color: darkgrey;
+  transform: translate(60px, 80px);
+  margin-bottom: 90px;
+}
+
+.ServicesF {
+  border: 1px solid black;
+  margin-top: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+}
+
+.ServicesF a {
+  text-decoration: none;
+  color: beige;
+}
+
+.ContactF {
+  border: 1px solid black;
+  margin-top: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  color: beige;
+}
+
+.ContactF a {
+  text-decoration: none;
+  color: beige;
+}
+
+.WagtailF {
+  border: 1px solid black;
+  margin-top: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  color: beige;
+}
+
+.WagtailF a {
+  text-decoration: none;
+  color: beige;
+}
+
+.ContactDetails {
+  /* border: 1px solid black; */
+  grid-column-start: 2;
+  grid-column-end: 3;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 15px;
+  color: darkgrey;
+  transform: translate(60px, 80px);
+  margin-bottom: 90px;
+}
+
+.Email {
+  border: 1px solid black;
+  margin-top: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: beige;
+}
+
+.Email a {
+  text-decoration: none;
+  color: beige;
+}
+
+.Text {
+  border: 1px solid black;
+  margin-top: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: beige;
+}
+
+.Hours {
+  /* border: 1px solid black; */
+  grid-column-start: 3;
+  grid-column-end: 4;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 15px;
+  color: darkgrey;
+  transform: translate(60px, 80px);
+  margin-bottom: 90px;
+}
+
+.Weekday {
+  border: 1px solid black;
+  margin-top: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: beige;
+}
+
+.Time {
+  border: 1px solid black;
+  margin-top: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: beige;
+}
+
+.SocialMedia {
+  /* border: 1px solid black; */
+  grid-column-start: 4;
+  grid-column-end: 5;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 15px;
+  color: darkgrey;
+  transform: translate(60px, 80px);
+  margin-bottom: 90px;
+  margin-right: 100px;
+}
+
+.TwitterYoutube {
+  border: 1px solid black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: beige;
+}
+
+.Copyright {
+  border: 1px solid black;
+  margin-top: 10px;
+  margin-left: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: darkgrey;
+}
